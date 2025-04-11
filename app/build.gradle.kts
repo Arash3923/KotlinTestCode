@@ -53,4 +53,6 @@ dependencies {
     // Views/Fragments Integration
     implementation( libs.androidx.navigation.fragment.ktx)
     implementation (libs.androidx.navigation.ui)
+    implementation(libs.smoothbottombar)
+
 }

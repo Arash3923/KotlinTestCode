@@ -10,6 +10,19 @@
         android:name="com.kotlintestcode.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.kotlintestcode.ui.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.kotlintestcode.ui.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+
     <fragment
         android:id="@+id/singleNoteFragment"
         android:name="com.kotlintestcode.ui.SingleNoteFragment"

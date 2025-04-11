@@ -10,16 +10,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.HomeFragment">
+        tools:context=".ui.ListFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
-            android:id="@+id/txt"
+            android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="home fragment"
+            android:text="List"
             android:textSize="24sp"
-            android:textColor="#FF9800"
+            android:textColor="#4CAF50"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

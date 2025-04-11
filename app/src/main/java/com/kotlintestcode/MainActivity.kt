@@ -1,11 +1,13 @@
 package com.kotlintestcode
 
 import android.os.Bundle
+import android.widget.PopupMenu
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.NavHostFragment
 import com.kotlintestcode.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,5 +22,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        setupNavigationComponent()
+    }
+
+    private fun setupNavigationComponent() {
+        val navHostFragment  = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController=navHostFragment.navController
+
+        val popupMenu=PopupMenu(this,null)
+        popupMenu.inflate(R.menu.menu_bottom)
+        val menu=popupMenu.menu
+
+        activityBinding.bottomBar.setupWithNavController(menu,navController)
+
     }
 }
